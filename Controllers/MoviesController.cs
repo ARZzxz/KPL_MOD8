@@ -29,7 +29,7 @@ namespace modul8_1302200027.Controllers
 
         List<Movie> movie1 = new List<Movie>();
 
-        public MoviesController(ILo<MoviesController> looger)
+        public MoviesController(ILogger<MoviesController> looger)
         {
             _looger = looger;
         }
@@ -38,7 +38,9 @@ namespace modul8_1302200027.Controllers
         public IEnumerable<Movie> Get()
         {
             movie1.Add(new Movie("Overflow", "Satoru Mikami", Stars1, "For a long time ago satoru not meet his cousin. when he meet them looks much groong from them"));
-            movie1.Add(new Movie("Overflow", "Masterpiece The Animation"
+            movie1.Add(new Movie("Masterpiece The Animation", "Yoshida Kokage", Stars2, "After his parents passed away many years ago, Enomoto Yuuji was adopted into the family of his childhood friends Yuna and Nina and their mother Mira. Now in high school and known as Yuuji Tsubakihara, he lives under the same roof as a pair of cute twins and a beautiful older woman. Although the shy, reserved Yuna and the outgoing, talented Nina are his family, Yuuji submits to his desires after witnessing Yuna turn down a confession. But as Yuuji and Yuna finally consummate their lifelong love, can Nina and Mira stand idly by?"));
+            movie1.Add(new Movie("kimi no nawa", "Jun Maeda",Stars3, "Stars3Two teenagers share a profound, magical connection upon discovering they are swapping bodies.Things manage to become even more complicated when the boy and girl decide to meet in person."));
+
         }
     }
 }
